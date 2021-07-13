@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		DF46200C269D5A9200C7BD31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF46200A269D5A9200C7BD31 /* LaunchScreen.storyboard */; };
 		DF462017269D5A9300C7BD31 /* UrbanLandscapeEyeTrackingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF462016269D5A9300C7BD31 /* UrbanLandscapeEyeTrackingTests.swift */; };
 		DF462022269D5A9300C7BD31 /* UrbanLandscapeEyeTrackingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF462021269D5A9300C7BD31 /* UrbanLandscapeEyeTrackingUITests.swift */; };
+		DF462031269D5BCC00C7BD31 /* EyeTrackKit in Frameworks */ = {isa = PBXBuildFile; productRef = DF462030269D5BCC00C7BD31 /* EyeTrackKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		DF46201D269D5A9300C7BD31 /* UrbanLandscapeEyeTrackingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UrbanLandscapeEyeTrackingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF462021269D5A9300C7BD31 /* UrbanLandscapeEyeTrackingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrbanLandscapeEyeTrackingUITests.swift; sourceTree = "<group>"; };
 		DF462023269D5A9300C7BD31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF462032269D5E1C00C7BD31 /* EyeTrackKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = EyeTrackKit; path = ../../DevPr/EyeTest/EyeTrackKit; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF462031269D5BCC00C7BD31 /* EyeTrackKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 		DF461FF0269D5A8F00C7BD31 = {
 			isa = PBXGroup;
 			children = (
+				DF462032269D5E1C00C7BD31 /* EyeTrackKit */,
 				DF461FFB269D5A8F00C7BD31 /* UrbanLandscapeEyeTracking */,
 				DF462015269D5A9300C7BD31 /* UrbanLandscapeEyeTrackingTests */,
 				DF462020269D5A9300C7BD31 /* UrbanLandscapeEyeTrackingUITests */,
@@ -147,6 +151,9 @@
 			dependencies = (
 			);
 			name = UrbanLandscapeEyeTracking;
+			packageProductDependencies = (
+				DF462030269D5BCC00C7BD31 /* EyeTrackKit */,
+			);
 			productName = UrbanLandscapeEyeTracking;
 			productReference = DF461FF9269D5A8F00C7BD31 /* UrbanLandscapeEyeTracking.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +225,9 @@
 				Base,
 			);
 			mainGroup = DF461FF0269D5A8F00C7BD31;
+			packageReferences = (
+				DF46202F269D5BCC00C7BD31 /* XCRemoteSwiftPackageReference "EyeTrackKit" */,
+			);
 			productRefGroup = DF461FFA269D5A8F00C7BD31 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -597,6 +607,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DF46202F269D5BCC00C7BD31 /* XCRemoteSwiftPackageReference "EyeTrackKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ukitomato/EyeTrackKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DF462030269D5BCC00C7BD31 /* EyeTrackKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF46202F269D5BCC00C7BD31 /* XCRemoteSwiftPackageReference "EyeTrackKit" */;
+			productName = EyeTrackKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		DF462005269D5A8F00C7BD31 /* UrbanLandscapeEyeTracking.xcdatamodeld */ = {
